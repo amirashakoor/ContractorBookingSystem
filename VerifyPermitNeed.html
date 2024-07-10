@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/4ee14bfa53.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Contractor Booking System</title>
+</head>
+<body>
+    <header id="header"></header>
+    
+    <div class="verify-permit-need">
+        <div class="verify-permit-need-content">
+            <h1 class="verify-permit-need-heading">Verify Permit Need</h1>
+            <p class="verify-permit-need-texts">
+                If any of your contractors are carrying out high-risk works, <br>
+                they are required to request a permit through this online system. <br>
+                High-risk works include, but are not limited to:<br>
+                    - General activities requiring the use of landlord areas<br>
+                    - Hot works<br>
+                    - Isolation of any life safety system, including sprinkler systems <br>
+                    - Live electrical work on landlord equipment<br>
+                    - Roof works<br>
+                    - Working from a height<br>
+                If any of your contractors are working on Cabot Circus/Hammerson demise <br>
+                and/or require access to an area controlled by Cabot Circus/Hammerson a <br>
+                permit to work will be required. <br>
+                If none of the above applies to you, you do not need to request a permit, 
+                please liase with the retailer directly. 
+                Please ensure you comply with these requirements to maintain safety and <br>
+                regulatory standards within the shopping center.<br>
+
+
+                </p>
+        </div>
+    </div>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data; // in this document, find id footer, then change the inner html to data 
+        });
+        });
+
+    </script>
+</body>
+
+</html>

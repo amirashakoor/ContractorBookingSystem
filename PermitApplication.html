@@ -10,6 +10,17 @@
 
 <body>
     <header id="header"></header>
+    
+    <div class="application">
+        <div class="application-content">
+            <h1 class="application-heading">Apply for a Permit</h1>
+            <p class="application-texts">
+                Please enter all details below.<br>
+                Onece your application has been checked and approved, you will be notified by email.                
+            </p>
+
+        </div>
+    </div>
 
     <div id="container">
         <div id="companyName" class="input">Company Name: <input id = "name" type="text" placeholder="Company Name" /></div>
@@ -17,4 +28,22 @@
 
         <button id="entry">Submit</button>
     </div>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+        fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data; // in this document, find id footer, then change the inner html to data 
+        });
+        });
+
+    </script>
 </body>

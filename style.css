@@ -23,5 +23,11 @@
     margin: 0 20px;
   }
 
+#header .logo{
+    width: 150px;
+    vertical-align: middle;
+    margin-top: 5px;
+  }
+
 
 

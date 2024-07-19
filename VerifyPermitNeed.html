@@ -34,8 +34,11 @@
 
                 </p>
         </div>
+        <div class="permit-application">
+            <a href="PermitApplication.html" class="application"><br>Apply for Permit</a>
+        </div>
     </div>
-
+    <footer id="footer"></footer>
     <script>
 
         document.addEventListener("DOMContentLoaded", function() {
@@ -44,6 +47,11 @@
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
+        });
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('footer').innerHTML = data; // in this document, find id footer, then change the inner html to data 
         });
         });
 

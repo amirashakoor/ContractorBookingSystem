@@ -10,46 +10,35 @@
 <body>
     <header id="header"></header>
 
+    <h1 class="contacts-heading">Useful Contacts</h1>
     <div class="contacts">
-        <div class="contacts-content">
-            <h1 class="contacts-heading">Cabot Circus<br>Useful Contacts</h1>
-
-            <div class="team-box-red">
-                <p class="team-red-text">email: ben.duckworth@cabotcircus.com<br>
-                    number: 07777777777
-                </p>
-                <div class="user-box">
-                    <p class="user-name">Ben Duckworth<br>Operations Manager</p>
-                </div>
+        <div class="contacts-box">
+            <p class="contacts-text">Email: ben.duckworth@cabotcircus.com<br>Phone: 07654892301</p> 
+            <div class="user-box">
+            <p class="user-name">Ben Duckworth<br> Operations Manager</p>
             </div>
-
-            <div class="team-box-red">
-                <p class="team-red-text">email: derek.thorn@mitie.com<br>
-                    number: 07777777777
-                </p>
-                <div class="user-box">
-                    <p class="user-name">Derek Thorn<br>Security Operations Manager</p>
-                </div>
+        </div>
+        <div class="contacts-box">
+            <p class="contacts-text">Email: <br>derek.thorn@mitie.com<br>Phone: 07224679348</p>
+            <div class="user-box">
+            <p class="user-name">Derek Thorn<br>Security Operations Manager</p>
             </div>
-
-            <div class="team-box-red">
-                <p class="team-red-text">email: control.room@cabotcircus.com<br>
-                    number: 0117777777
-                </p>
-                <div class="user-box">
-                    <p class="user-name">Control Room</p>
-                </div>
+        </div>
+        <div class="contacts-box">
+            <p class="contacts-text">Email: informationdesk@cabotcircus.com<br>Phone: 0117 951 9333</p>
+            <div class="user-box">
+            <p class="user-name">Information Desk</p>
             </div>
-
-            <div class="team-box-red">
-                <p class="team-red-text">email: information.desk@cabotcircus.com<br>
-                    number: 0117777777
-                </p>
-                <div class="user-box">
-                    <p class="user-name">Information Desk</p>
-                </div>
+        </div>
+        <div class="contacts-box-red">
+            <p class="contacts-red-text">Email: control.room@cabotcircus.com<br>Phone: 0117 951 9357</p>
+            <div class="user-box">
+            <p class="user-name">Control Room</p>
             </div>
+        </div>
     </div>
+    <footer id="footer"></footer>
+    
     <script>
 
         document.addEventListener("DOMContentLoaded", function() {
@@ -58,6 +47,11 @@
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
+        });
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('footer').innerHTML = data; // in this document, find id footer, then change the inner html to data 
         });
         });
 

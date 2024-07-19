@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
   }
 
   body, h1, h2, h3, h4, h5, h6, p, a, li {
@@ -28,6 +29,158 @@
     vertical-align: middle;
     margin-top: 5px;
   }
+
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  
+  input[type=text], input[type=password], input[type=file], input[type=email], input[type=number], input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 40px;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #1f1cf1;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .contacts-heading{
+    color: black;
+    margin: 0 0 15px 100px;
+  }
+
+  .contacts{
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts-box{
+    width: 22%;
+    height: 250px;
+    margin: 15px auto;
+
+  }
+
+  .contacts-text{
+    color: #004368;
+    margin: auto;
+    padding: 15px;
+    border: 3px solid black;
+  }
+
+  .user-box{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-name{
+    margin: 5px 5px;
+    color:#004368;
+  }
+
+
+  .contacts-box-red{
+    width: 22%;
+    height: 250px;
+    margin: 15px auto;
+  }
+
+  .contacts-red-text{
+    background-color: #E16959;
+    color: #fff;
+    border:3px solid #E16959;
+    margin: auto;
+    padding: 15px;
+  }
+
+  #footer {
+    width: 100%; 
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.603);
+    justify-content: center;
+  }
+
+  #footer .footer-main{
+    border-right: solid 3px black;
+    padding: 0 30px;
+  }
+
+  #footer .cabot{
+    font-size: 20px;
+    color: black;
+  }
+
+  #footer nav ul{
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  #footer nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  #footer .logo{
+    width: 60px;
+    vertical-align: middle;
+    margin-top: 5px;
+  }
+
+  .top-heading{
+    color: black;
+    margin: 0 0 15px 100px;
+  }
+  .top-texts{
+    margin: 0 0 15px 100px;
+  }
+
+  .important-notice-heading{
+    margin: 0 0 15px 100px;
+  }
+
+  .important-notice-text{
+    margin: 0 0 15px 100px;
+  }
+
+  .permit-need{
+    margin: 0 0 15px 100px;
+  }
+
+  .information-content{
+    margin: 0 0 15px 100px;
+  }
+
+  .verify-permit-need{
+    margin: 0 0 15px 100px;
+  }
+
+  .application{
+    margin: 0 0 15px 100px;
+  }
+
 
 
 

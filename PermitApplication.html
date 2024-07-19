@@ -23,10 +23,99 @@
     </div>
 
     <div id="container">
-        <div id="companyName" class="input">Company Name: <input id = "name" type="text" placeholder="Company Name" /></div>
-        <div id="contractorName" class="input">Contractor Name: <input id = "name" type="text" placeholder="Contractor Name" /></div>
+        <h3 class="heading"><br>Contractor Information:</h3>
+        <div id="companyName" class="input">Company Name: <input id = "name" type="text"/></div>
+        <div id="contractorName" class="input">Contractor Name: <input id = "name" type="text"/></div>
+        <div id="email" class="input">Email: <input id="email" type="email"></div>
+        <div id="phone" class="input">Contact Number: <input id="phone" type="number"/></div>
 
-        <button id="entry">Submit</button>
+        <h3 class="heading"><br>Project Details:</h3>
+        <div id="description" class="input">Description of Work to be Performed: <input id="description" type="text"/></div>
+        <div id="location" class="input">Location of Work: <input id="location" type="text"/></div>
+        <div id="startdate" class="input">Estimated Start Date: <input id="startdate" type="date"/></div>
+        <div id="enddate" class="input">Estimated End Date: <input id="enddate" type="date"/></div>
+
+        <h3 class="heading"><br>Health and Safety Compliance:</h3>
+        <label>Do you have current Public Liability Insurance?
+            <input list="selection" name="mySelection" /></label>
+            <datalist id="selection">
+              <option value="Yes">
+              <option value="No">
+            </datalist>
+        
+        <div id="file" class="input">Upload Public Liability Insurance: <input id="file" type="file"/></div>
+
+        <label>Do you have a current Health and Safety Policy?
+            <input list="selection" name="mySelection" /></label>
+            <datalist id="selection">
+              <option value="Yes">
+              <option value="No">
+            </datalist>
+
+        <div id="file" class="input">Upload Health and Safety Policy Document: <input id="file" type="file"/></div>
+
+        <label>Have you conducted a Risk Assessment for this project?
+            <input list="selection" name="mySelection" /></label>
+            <datalist id="selection">
+                <option value="Yes">
+                <option value="No">
+            </datalist>
+
+        <div id="file" class="input">Upload Risk Assessment Document: <input id="file" type="file"/></div>
+
+        <h3 class="heading"><br>Permits and Training:</h3>
+        <label>Are you qualified and certified to perform the work?
+            <input list="selection" name="mySelection" /></label>
+            <datalist id="selection">
+                <option value="Yes">
+                <option value="No">
+            </datalist>
+        
+        <div id="file" class="input">Upload Qualification/Certification Documents: <input id="file" type="file"/></div>
+
+        <label>Do you require any specific permits (e.g., hot work permit, electrical isolation)?
+            <input list="selection" name="mySelection" /></label>
+            <datalist id="selection">
+                <option value="Yes">
+                <option value="No">
+            </datalist>
+            
+        <div id="file" class="input">Upload Relevant Permits: <input id="file" type="file"/></div>
+
+        <h3 class="heading"><br>Safety Equiptment and Procedures:</h3>
+        <label>Will you be using any hazardous materials?
+            <input list="selection" name="mySelection" /></label>
+            <datalist id="selection">
+                <option value="Yes">
+                <option value="No">
+            </datalist>
+        
+        <div id="details" class="input">If yes, provide details: <input id="details" type="text"/></div>
+
+        <label>Will you be working at height?
+            <input list="selection" name="mySelection" /></label>
+            <datalist id="selection">
+                <option value="Yes">
+                <option value="No">
+            </datalist>
+        
+        <div id="details" class="input">Describe the safety measures in place for working at height: <input id="details" type="text"/></div>
+        
+        <label>Will you be using any specialised equiptment?
+            <input list="selection" name="mySelection" /></label>
+            <datalist id="selection">
+                <option value="Yes">
+                <option value="No">
+            </datalist>
+        
+        <div id="details" class="input">If yes, provide details: <input id="details" type="text"/></div>
+
+        <h3 class="heading"><br>Additional Information:</h3>
+        <div id="details" class="input">Provide any additional details relevant to your permit application: <input id="details" type="text"/></div>
+    
+        <div id="file" class="input">Upload any other supporting documents: <input id="file" type="file"/></div>
+
+        <button type="submit" class="btn">Submit</button>
     </div>
     <script>
 
